@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:background="#2699FB">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text11"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="100dp"
+        android:padding="15dp"
+        android:text="MANAGER"
+        android:textSize="38dp"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text12"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="100dp"
+        android:padding="15dp"
+        android:text="EMAIL ID"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text11"
+        />
+
+    <ImageView
+        android:id="@+id/i2"
+        android:layout_width="265dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/text12"
+        android:layout_alignStart="@+id/text11"
+        android:layout_alignEnd="@+id/text11"
+
+        android:layout_marginStart="-141dp"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="229dp"
+        android:layout_marginRight="-105dp"
+        android:layout_toLeftOf="@+id/ed1"
+        android:src="@mipmap/user" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed1"
+        android:layout_below="@+id/text12"
+        android:hint="email"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="12dp"
+        android:padding="15dp"
+        android:background="@drawable/rounded_border_edittext"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text13"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="25dp"
+        android:padding="15dp"
+        android:text="PASSWORD"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ed1"
+        />
+
+    <ImageView
+        android:id="@+id/i1"
+        android:layout_width="265dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/text13"
+        android:layout_alignStart="@+id/text12"
+        android:layout_alignEnd="@+id/text12"
+
+        android:layout_marginStart="-141dp"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="229dp"
+        android:layout_marginRight="-105dp"
+        android:layout_toLeftOf="@+id/ed2"
+        android:src="@mipmap/padlock" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed2"
+        android:layout_below="@+id/text13"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="12dp"
+        android:padding="15dp"
+        android:background="@drawable/rounded_border_edittext"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b12"
+        android:text="CUSTOMER"
+        android:layout_below="@+id/ed2"
+        android:layout_marginTop="35dp"
+        android:layout_alignStart="@+id/ed2"
+        android:layout_alignEnd="@+id/ed2"
+        android:background="@drawable/rounded_border_edittext"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        />
+</RelativeLayout>
+
+
