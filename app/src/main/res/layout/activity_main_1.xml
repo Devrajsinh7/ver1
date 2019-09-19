@@ -1,69 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:id="@+id/activity_main"
-    android:background="#2699FB"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#455A64">
 
-    <TextView
+
+    <ImageView
+        android:id="@+id/login_icon"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/spalshscreenimage" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text1"
-        android:layout_marginLeft="18dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginTop="60dp"
-        android:padding="15dp"
-        android:text="FOOD SET GO"
-        android:textSize="51dp"
-        android:textStyle="italic"
-        android:layout_centerHorizontal="true"
-        android:textAlignment="center"
-        />
+        android:paddingBottom="30dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/my_border"
+        >
 
-    <TextView
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="as"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="75dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:text="MANAGER"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="75dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:text="CUSTOMER"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/text2"
-        android:layout_marginRight="18dp"
-        android:layout_marginLeft="18dp"
-        android:padding="8dp"
-        android:text="Login as"
-        android:textSize="26dp"
-        android:textStyle="italic"
-        android:layout_marginTop="12dp"
-        android:layout_below="@+id/text1"
-        android:textAlignment="center"
-        />
+        android:layout_height="180dp"
+        android:src="@drawable/food_logo" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/b1"
-        android:text="MANAGER"
-        android:layout_below="@+id/text2"
-        android:layout_marginTop="37dp"
-        android:layout_alignStart="@+id/text2"
-        android:layout_alignEnd="@+id/text2"
-        android:background="@drawable/rounded_border_edittext"
-        android:layout_marginRight="25dp"
-        android:layout_marginLeft="25dp"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/b2"
-        android:text="CUSTOMER"
-        android:layout_below="@+id/b1"
-        android:layout_marginTop="40dp"
-        android:layout_alignStart="@+id/text2"
-        android:layout_alignEnd="@+id/text2"
-        android:background="@drawable/rounded_border_edittext"
-        android:layout_marginRight="25dp"
-        android:layout_marginLeft="25dp"
-        />
-
-</RelativeLayout>
+</LinearLayout>

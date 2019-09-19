@@ -10,39 +10,29 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Main1Activity extends AppCompatActivity {
     Button btnm,btnc;
 
-    /*private Context context;
-
-    public Main1Activity(Context context) {
-        this.context = context;
-    }*/
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_1);
+        final Intent intent1 = new Intent(getApplicationContext(),Main2Activity.class);
+        final Intent intent2 = new Intent(getApplicationContext(),Main3Activity.class);
         btnm = findViewById(R.id.b1);
         btnc = findViewById(R.id.b2);
+
         btnm.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent m = new Intent(Main1Activity.this,Main2Activity.class);
-                startActivity(m);
+            public void onClick(View view) {
+
+                startActivity(intent1);
             }
-        });
-//        btnm.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent m = new Intent(Main1Activity.this,Main2Activity.class);
-//                startActivity(m);
-//            }
-//        });
+       });
 
         btnc.setOnClickListener(new  View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent c = new Intent(Main1Activity.this,Main3Activity.class);
-                startActivity(c);
-                //context.startActivity(c);
+            public void onClick(View view) {
+
+                startActivity(intent2);
+
             }
         });
     }

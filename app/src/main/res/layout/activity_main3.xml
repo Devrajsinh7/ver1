@@ -1,66 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/activity_main2"
-    android:background="#2699FB"
-    >
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/text21"
-        android:layout_marginLeft="18dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginTop="100dp"
-        android:padding="15dp"
-        android:text="MANAGER"
-        android:textSize="38dp"
-        android:textStyle="italic"
-        android:layout_centerHorizontal="true"
-        android:textAlignment="center"
-        />
+    android:id="@+id/activity_main2">
 
-    <ImageView
-        android:id="@+id/i21"
-        android:layout_width="265dp"
-        android:layout_height="46dp"
-        android:layout_below="@+id/text21"
-
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="9dp"
-
-        android:layout_marginRight="0dp"
-        android:scaleType="fitCenter"
-        android:src="@mipmap/gmail" />
-
-    <FrameLayout
-        android:layout_below="@+id/i21"
-        android:id="@+id/FrameLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp">
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/btn_sign_in"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp" />
-
-        <Button
-
-        android:id="@+id/google"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="#cf4333"
-        android:onClick="onClick"
-        android:text="Google Login"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-
-        />
+        <TextView
+            android:id="@+id/text11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:text="Customer"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:textSize="50dp"
+            android:textColorHint="@color/colorAccent"
+            android:fontFamily="@font/seaside" />
 
 
 
-    </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/my_border">
 
-</RelativeLayout>
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp">
+                <ImageView
+                    android:id="@+id/i2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/profile" />
+
+                <EditText
+                    android:id="@+id/ed1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text12"
+                    android:layout_marginRight="43dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:hint="Email"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/pacifico"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <ImageView
+                    android:id="@+id/i1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/padlock" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed2"
+                    android:layout_below="@+id/text13"
+                    android:hint="Password"
+                    android:fontFamily="@font/pacifico"
+                    android:textSize="20sp"
+                    android:inputType="textPassword"
+                    android:layout_marginRight="43dp"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    />
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_login"
+                android:text="Submit"
+                android:fontFamily="@font/pacifico"
+                android:textStyle="bold"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/rounded_border_edittext"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/sign_in"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Need to create new Account? Sign in"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/lobster"/>
+        </LinearLayout>
+    </LinearLayout>

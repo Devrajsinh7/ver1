@@ -1,127 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/activity_main"
-    android:background="#2699FB">
+    android:id="@+id/activity_main">
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/text11"
-        android:layout_marginLeft="18dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginTop="100dp"
-        android:padding="15dp"
-        android:text="MANAGER"
-        android:textSize="38dp"
-        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:text="Manager"
+        android:textColor="@color/colorPrimaryDark"
         android:textAlignment="center"
-        />
-    <TextView
+        android:textSize="50dp"
+        android:textColorHint="@color/colorAccent"
+        android:fontFamily="@font/seaside" />
+
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/my_border">
+
+      <LinearLayout android:layout_height="wrap_content"
+       android:layout_width="match_parent"
+          android:layout_marginTop="20dp">
+       <ImageView
+            android:id="@+id/i2"
+            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="15dp"
+            android:src="@mipmap/profile" />
+
+        <EditText
+            android:id="@+id/ed1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text12"
+            android:layout_marginRight="43dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:hint="Email"
+            android:textSize="20sp"
+            android:fontFamily="@font/pacifico"
+            android:padding="10dp" />
+   </LinearLayout>
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/text12"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginTop="100dp"
-        android:padding="15dp"
-        android:text="EMAIL ID"
-        android:textSize="20dp"
-        android:textStyle="italic"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/text11"
-        />
-
-    <ImageView
-        android:id="@+id/i2"
-        android:layout_width="265dp"
-        android:layout_height="46dp"
-        android:layout_below="@+id/text12"
-        android:layout_alignStart="@+id/text11"
-        android:layout_alignEnd="@+id/text11"
-
-        android:layout_marginStart="-141dp"
-
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="229dp"
-        android:layout_marginRight="-105dp"
-        android:layout_toLeftOf="@+id/ed1"
-        android:src="@mipmap/user" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ed1"
-        android:layout_below="@+id/text12"
-        android:hint="email"
-        android:layout_marginLeft="43dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginTop="12dp"
-        android:padding="15dp"
-        android:background="@drawable/rounded_border_edittext"
-        />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/text13"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginTop="25dp"
-        android:padding="15dp"
-        android:text="PASSWORD"
-        android:textSize="20dp"
-        android:textStyle="italic"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/ed1"
-        />
-
-    <ImageView
-        android:id="@+id/i1"
-        android:layout_width="265dp"
-        android:layout_height="46dp"
-        android:layout_below="@+id/text13"
-        android:layout_alignStart="@+id/text12"
-        android:layout_alignEnd="@+id/text12"
-
-        android:layout_marginStart="-141dp"
-
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="229dp"
-        android:layout_marginRight="-105dp"
-        android:layout_toLeftOf="@+id/ed2"
-        android:src="@mipmap/padlock" />
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/i1"
+            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/padlock" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/ed2"
         android:layout_below="@+id/text13"
-        android:hint="password"
+        android:hint="Password"
+        android:fontFamily="@font/pacifico"
+        android:textSize="20sp"
         android:inputType="textPassword"
-        android:layout_marginLeft="43dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginTop="12dp"
-        android:padding="15dp"
+        android:layout_marginRight="43dp"
+        android:padding="10dp"
         android:background="@drawable/rounded_border_edittext"
         />
+    </LinearLayout>
 
     <Button
+        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/b12"
-        android:text="CUSTOMER"
-        android:layout_below="@+id/ed2"
+        android:text="Submit"
+        android:fontFamily="@font/pacifico"
+        android:textStyle="bold"
         android:layout_marginTop="35dp"
-        android:layout_alignStart="@+id/ed2"
-        android:layout_alignEnd="@+id/ed2"
         android:background="@drawable/rounded_border_edittext"
         android:layout_marginRight="25dp"
         android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
         />
-</RelativeLayout>
+  </LinearLayout>
+</LinearLayout>
 
 
